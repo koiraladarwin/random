@@ -1,6 +1,6 @@
 <?php
 // Simple Local SQL Executor (ONLY FOR LOCALHOST / DEV)
-$mysqli = new mysqli("192.168.101.81", "financeUser", "UVE1bcPui2bh", "apex_finance");
+$mysqli = new mysqli("localhost", "root", "toor", "apexmisdb");
 
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
